@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tienda de Juguetes</title>
+</head>
+<body>
+  <header>
+    <h1 class="title">Tienda de Juguetes</h1>
+  </header>
+  <main>
+    <table>
+      <tr>
+        <th>Cantidad</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Descuento</th>
+      </tr>
+      <tr>
+        <td>
+          <input onchange="calcDesc()" id="input-cant" class="input-cant" type="number" value="0">
+        </td>
+        <td>Monopolio</td>
+        <td>S/ 70.99</td>
+        <td id="desc-mono"></td>
+      </tr>
+      <tr>
+        <td>
+          <input class="input-cant" type="number" value="0">
+        </td>
+        <td>Ajedrez</td>
+        <td>S/ 78.99</td>
+      </tr>
+      <tr>
+        <td>
+          <input class="input-cant" type="number" value="0">
+        </td>
+        <td>Lego</td>
+        <td>S/ 100.99</td>
+      </tr>
+      <tr>
+        <td>
+          <input class="input-cant" type="number" value="0">
+        </td>
+        <td>Dama</td>
+        <td>S/ 58.50</td>
+      </tr>
+      <tr>
+        <td>
+          <input class="input-cant" type="number" value="0">
+        </td>
+        <td>Laberinto</td>
+        <td>S/ 35.00</td>
+      </tr>
+    </table>
+    <div class="text-descuento">
+      <p style="font-size: x-large;">💡</p>
+      <p>La tienda de juguetes dará descuento por la cantidad de jueguetes comprados:</p>
+      <table>
+        <tr>
+          <th>Cantidad</th>
+          <th>Descuento</th>
+        </tr>
+        <tr>
+          <td>< 10</td>
+          <td>3.5 %</td>
+        </tr>
+        <tr>
+          <td> >= 10 y <= 20</td>
+          <td>7.0 %</td>
+        </tr>
+        <tr>
+          <td>>20</td>
+          <td>9.5 %</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
