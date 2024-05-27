@@ -20,39 +20,43 @@
       </tr>
       <tr>
         <td>
-          <input onchange="calcDesc()" id="input-cant" class="input-cant" type="number" value="0">
+          <input onchange="calcDesc('monopolio', this.value, 70.99)" id="input-cant" class="input-cant" type="number" value="0">
         </td>
         <td>Monopolio</td>
         <td>S/ 70.99</td>
-        <td id="desc-mono"></td>
+        <td id="desc-mono">S/ 0</td>
       </tr>
       <tr>
         <td>
-          <input class="input-cant" type="number" value="0">
+          <input onchange="calcDesc('ajedrez', this.value, 78.99)" class="input-cant" type="number" value="0">
         </td>
         <td>Ajedrez</td>
         <td>S/ 78.99</td>
+        <td id="desc-ajedrez">S/ 0</td>
       </tr>
       <tr>
         <td>
-          <input class="input-cant" type="number" value="0">
+          <input onchange="calcDesc('lego', this.value, 100.99)" class="input-cant" type="number" value="0">
         </td>
         <td>Lego</td>
         <td>S/ 100.99</td>
+        <td id="desc-lego">S/ 0</td>
       </tr>
       <tr>
         <td>
-          <input class="input-cant" type="number" value="0">
+          <input onchange="calcDesc('dama', this.value, 58.50)" class="input-cant" type="number" value="0">
         </td>
         <td>Dama</td>
         <td>S/ 58.50</td>
+        <td id="desc-dama">S/ 0</td>
       </tr>
       <tr>
         <td>
-          <input class="input-cant" type="number" value="0">
+          <input onchange="calcDesc('laberinto', this.value, 35.00)" class="input-cant" type="number" value="0">
         </td>
         <td>Laberinto</td>
         <td>S/ 35.00</td>
+        <td id="desc-laberinto">S/ 0</td>
       </tr>
     </table>
     <div class="text-descuento">
